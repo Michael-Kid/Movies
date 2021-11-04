@@ -8,9 +8,11 @@ import {
 
 export default function Home() {
   const dispatch = useDispatch()
+  const movieText = 'Hunger'
+  const showText = 'Star'
   useEffect(() => {
-    dispatch(fetchAsyncMovies())
-    dispatch(fetchAsyncShows())
+    dispatch(fetchAsyncMovies(movieText))
+    dispatch(fetchAsyncShows(showText))
   }, [dispatch])
 
   return (
