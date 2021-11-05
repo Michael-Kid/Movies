@@ -7,6 +7,7 @@ import {
   getSelectedMovieOrShow,
   removeSelectedMovieOrShow,
 } from '../../features/movies/movieSlice'
+import Loader from '../Loader/Loader'
 import './MovieDetail.scss'
 
 export default function MovieDetail() {
@@ -22,7 +23,7 @@ export default function MovieDetail() {
   return (
     <div className='movie-section'>
       {Object.keys(data).length === 0 ? (
-        <div>...Loading</div>
+        <Loader />
       ) : (
         <>
           <div className='section-left'>

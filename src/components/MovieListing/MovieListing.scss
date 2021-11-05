@@ -9,3 +9,32 @@
     font-weight: 400;
   }
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.movies-error,
+.shows-error {
+  h3 {
+    color: $font-secondary;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+}
+
+.slick-cloned {
+  .movies-error,
+  .shows-error {
+    display: none !important;
+  }
+}
+
+.movie-container .movies-error,
+.shows-error {
+  h3 {
+    width: 100vw;
+  }
+}
